@@ -5,15 +5,6 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
 
-const CheckView = ({ info }) => {
-  const { training } = info;
-  return (
-    <div>
-      <p>{training.customer.firstname}</p>
-    </div>
-  );
-};
-
 function CalendarPage() {
   const [trainings, setTrainings] = useState([]);
 
@@ -36,6 +27,21 @@ function CalendarPage() {
       .catch((err) => console.error(err));
   };
 
+  const showEvent = (eventInfo) => {
+    return (
+      <>
+        <p>
+          <b>
+            {eventInfo.timeText} <br />
+          </b>
+          {eventInfo.event._def.extendedProps.customer.firstname}{" "}
+          {eventInfo.event._def.extendedProps.customer.lastname}
+          {" - "}
+          {eventInfo.event._def.extendedProps.activity}
+        </p>
+      </>
+    );
+  };
 
   return (
     <>
@@ -50,7 +56,7 @@ function CalendarPage() {
           }}
           initialView="dayGridMonth"
           events={trainings}
-          eventContent={(info) => <CheckView info={trainings} />}
+          eventContent={showEvent}
           eventTimeFormat={{
             hour: "2-digit",
             minute: "2-digit",
