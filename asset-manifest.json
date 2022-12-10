@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Janttonen/training-app.git/static/css/main.41165868.css",
+    "main.js": "/Janttonen/training-app.git/static/js/main.629f1bbf.js",
+    "static/js/787.eab0c2c9.chunk.js": "/Janttonen/training-app.git/static/js/787.eab0c2c9.chunk.js",
+    "index.html": "/Janttonen/training-app.git/index.html",
+    "main.41165868.css.map": "/Janttonen/training-app.git/static/css/main.41165868.css.map",
+    "main.629f1bbf.js.map": "/Janttonen/training-app.git/static/js/main.629f1bbf.js.map",
+    "787.eab0c2c9.chunk.js.map": "/Janttonen/training-app.git/static/js/787.eab0c2c9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.41165868.css",
+    "static/js/main.629f1bbf.js"
+  ]
+}
