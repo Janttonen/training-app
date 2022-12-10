@@ -19,7 +19,7 @@ function TrainingPage() {
       sortable: true,
       filter: true,
     },
-    { field: "duration", sortable: true, filter: true },
+    { field: "duration", sortable: true, filter: true, },
     { field: "activity", sortable: true, filter: true },
     {
       field: "customer.firstname",

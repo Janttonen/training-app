@@ -52,7 +52,6 @@ function CustomerPage() {
         }
       })
       .then((data) => {
-        console.log(data);
         setCustomers(data.content);
       })
       .catch((err) => console.error(err));
@@ -128,7 +127,6 @@ function CustomerPage() {
         />
       </div>
       <AddCustomer addCustomer={addCustomer} />
-
       <CSVLink
         headers={headers}
         data={customers}
